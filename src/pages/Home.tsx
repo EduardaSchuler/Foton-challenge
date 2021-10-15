@@ -33,14 +33,14 @@ export const Home: FC = () => {
   const searchMainRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    const CardsQuery = ["code clean", "The one thing gary", "Harry Potter",
-      "The little prince", "A tale of two cities", "The Da Vinci code"];
-    const currentlyReadingBookQuery = "How Non-Conformists Move the World";
+    const CardsQuery = ["Enquanto eu não te encontro", "Here The Whole Time", "Percy Jackson",
+      "Pride and Prejudice", "One Last Stop", "The Queen of Nothing"];
+    const currentlyReadingBookQuery = "the chalk man";
 
     setLoading(true);
 
     axios.all([
-      axios.get(`https://www.googleapis.com/books/v1/volumes?q=$Cards{Query[0]}`),
+      axios.get(`https://www.googleapis.com/books/v1/volumes?q=${CardsQuery[0]}`),
       axios.get(`https://www.googleapis.com/books/v1/volumes?q=${CardsQuery[1]}`),
       axios.get(`https://www.googleapis.com/books/v1/volumes?q=${CardsQuery[2]}`),
       axios.get(`https://www.googleapis.com/books/v1/volumes?q=${CardsQuery[3]}`),
@@ -98,16 +98,7 @@ export const Home: FC = () => {
           console.error(error);
         });
     }
-  }, [startIndex]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  const handleCardsSwipe = (index: number, indexLatest: number) => {
-    if (index > indexLatest) {
-      setMiddleIndex(mainIndex + 1);
-    }
-    else {
-      setMiddleIndex(mainIndex - 1);
-    }
-  }
+  }, [startIndex]) 
 
   const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearchingText(e.target.value);
@@ -119,16 +110,6 @@ export const Home: FC = () => {
     history.push("/book-detail");
   }
 
-  const handleSearchMainScroll = () => {
-    if (searchMainRef.current) {
-      const { scrollTop, scrollHeight, clientHeight } = searchMainRef.current;
-      if (scrollTop + clientHeight === scrollHeight) {
-        setLoadMoreButton(true);
-      } else {
-        setLoadMoreButton(false);
-      }
-    }
-  }
 
   const handleLoadMoreClick = () => {
     setStartIndex(startIndex + 40);
@@ -191,7 +172,6 @@ export const Home: FC = () => {
             <main
               className={styles.searchMain}
               ref={searchMainRef}
-              onScroll={handleSearchMainScroll}
             >
               {searchedBooks.map((book, index) => (
                 <div key={index} className={styles.searchedBook}>
@@ -266,9 +246,6 @@ export const Home: FC = () => {
                 paddingRight: "10px",
                 flex: "none",
               }}
-              enableMouseEvents
-              hysteresis={0}
-              onChangeIndex={(index, indexLatest) => handleCardsSwipe(index, indexLatest)}
             >
               {CardsBooks.map((book, index) => (
                 <Cards
