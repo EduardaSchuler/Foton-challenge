@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone this repository and start our challenge **right now**
 
-## Available Scripts
+Use React or React Native depending on the rule you are running for.
 
-In the project directory, you can run:
+**NOTE:** If you have any questions regarding the test, just send us your question on our Discord's channel **#technical-challenge** on [Foton Discord](https://discord.gg/uw55aDewNf).
 
-### `npm start`
+## API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Use the [Google Books](https://developers.google.com/books/docs/v1/using)' API to recover the data that will be shown on the app.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```js
+const query = 'harry potter';
+fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
+```
 
-### `npm test`
+**NOTE:** You can use the form of calling apis of your choice (Fetch, Axios, etc).  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design/Screens
+https://www.figma.com/file/KFElqzD983WNyvMY1SaF0c/book-app?node-id=0%3A1
 
-### `npm run build`
+<img width="581" alt="Screen Shot 2021-04-13 at 10 19 47" src="https://user-images.githubusercontent.com/13947203/114559257-eb55ad00-9c41-11eb-9617-4e7627cc373e.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The website design has 3 screens, which are:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Home
 
-### `npm run eject`
+1. Create a Pixel Perfect screen based on design above;
+2. The books must be clickable and redirect to **details** screen.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Search
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In this screen the functionalities below are **mandatory**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. See a list of books based on search query;
+2. Make it possible to search for more books with a "Load more" button;
+3. Search books by name;
+4. Click on one of the books to see their details.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Books details
 
-## Learn More
+In this screen the functionalities below are **mandatory**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. See all information for the selected book.

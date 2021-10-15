@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: SFProText-Regular;
-  src: url("/src/fonts/SFProText-Regular.ttf");
+  src: url("./fonts/SFProText-Regular.ttf");
   font-style: normal;
   font-weight: normal;
   font-display: swap;
@@ -8,41 +14,40 @@
 
 @font-face {
   font-family: SFProText-Bold;
-  src: url("/src/fonts/SFProText-Bold.ttf");
+  src: url("./fonts/SFProText-Bold.ttf");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: SFProDisplay-Regular;
-  src: url("/src/fonts/FontsFree-Net-SFProDisplay-Regular.ttf");
+  src: url("./fonts/SFProDisplay-Regular.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SFProDisplay-Semibold;
+  src: url("./fonts/SFProDisplay-Semibold.ttf");
+  font-style: normal;
+  font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: SFProDisplay-Bold;
-  src: url("/src/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+  src: url("./fonts/SFProDisplay-Bold.ttf");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-display: swap;
 }
 
-@font-face {
-  font-family: SFProDisplay-Medium;
-  src: url("/src/fonts/FontsFree-Net-SFProDisplay-Medium.ttf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-}
 
 html, body {
-  height: 100vh;
-  overflow: hidden;
-  background-color: #fefaf6;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  height: 100%;
+  background-color: #FFFCF9;
 }
 
 code {
