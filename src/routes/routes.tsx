@@ -3,12 +3,17 @@ import {
     Switch,
     Route
 } from 'react-router-dom';
-import App from '../App';
+
+import Home from '../pages/Home';
+import Search from '../pages/Search';
+import Details from '../pages/Details';
 
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={App}></Route>
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/search" component={Search}></Route>
+            <Route exact path="/details" component={Details}></Route>
             <Route path="*" component={() => <h1>Página não encontrada</h1>} />
         </Switch>
     </BrowserRouter>
