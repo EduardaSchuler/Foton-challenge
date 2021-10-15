@@ -1,11 +1,11 @@
 import { FC } from "react";
 import styles from "../../styles/SearchComponent.module.css";
 
-interface SearchProps {
+interface SearchBoxProps {
     placeholder: string;
 }
 
-export const Search: FC<SearchProps> = (props) => {
+export const SearchBox: FC<SearchBoxProps> = (props) => {
     return (
         <div className={styles.container}>
             <img

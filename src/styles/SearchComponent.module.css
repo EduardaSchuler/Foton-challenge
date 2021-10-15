@@ -2,9 +2,11 @@
 height: 48px;
 width: 336px;
 border-radius: 10px;
-background-color: var(#FDFCFC);
+background-color: #FDFCFC;
+box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
 display: flex;
 align-items: center;
+gap: 10px;
 padding: 15px;
 }
 
@@ -16,8 +18,13 @@ font-size: 16px;
 line-height: 18px;
 color: #000000;
 border: none;
-background-color: var(#FDFCFC);
+background-color: #FDFCFC;
 outline: none;
+direction: ltr;
+}
+
+input:focus::placeholder {
+color: transparent;
 }
 
 input::placeholder {
@@ -25,21 +32,6 @@ font-family: SFProText-Regular;
 font-size: 16px;
 line-height: 18px;
 letter-spacing: 0px;
-color: var(--home-header-text-color);
+color: #54565A;
 }
 
-:-ms-input-placeholder {
-font-family: SFProText-Regular;
-font-size: 16px;
-line-height: 18px;
-letter-spacing: 0px;
-color: var(--home-header-text-color);
-}
-
-::-ms-input-placeholder {
-font-family: SFProText-Regular;
-font-size: 16px;
-line-height: 18px;
-letter-spacing: 0px;
-color: var(--home-header-text-color);
-}
