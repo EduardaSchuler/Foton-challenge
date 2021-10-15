@@ -10,8 +10,8 @@ export const Menu: FC = (props) => {
                 tabIndex={1}
                 className={styles.wrapper}
                 style={{
-                    stroke: selectedPage === "home" ? "#000000" : "",
-                    color: selectedPage === "home" ? "var(--menu-text-color)" : ""
+                    stroke: selectedPage === "home" ? "#313131" : "",
+                    color: selectedPage === "home" ? "313131" : ""
                 }}
                 onClick={() => setSelectedPage("home")}
             >
@@ -27,8 +27,8 @@ export const Menu: FC = (props) => {
                 tabIndex={2}
                 className={styles.wrapper}
                 style={{
-                    stroke: selectedPage === "libraries" ? "#000000" : "",
-                    color: selectedPage === "libraries" ? "var(--menu-text-color)" : ""
+                    stroke: selectedPage === "libraries" ? "#313131" : "",
+                    color: selectedPage === "libraries" ? "#313131" : ""
                 }}
                 onClick={() => setSelectedPage("libraries")}
             >
@@ -44,8 +44,8 @@ export const Menu: FC = (props) => {
                 tabIndex={3}
                 className={styles.wrapper}
                 style={{
-                    stroke: selectedPage === "profile" ? "#000000" : "",
-                    color: selectedPage === "profile" ? "var(--menu-text-color)" : ""
+                    stroke: selectedPage === "profile" ? "#313131" : "",
+                    color: selectedPage === "profile" ? "#313131" : ""
                 }}
                 onClick={() => setSelectedPage("profile")}
             >
