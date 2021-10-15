@@ -1,14 +1,51 @@
+@font-face {
+  font-family: SFProText-Regular;
+  src: url("/src/fonts/SFProText-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SFProText-Bold;
+  src: url("/src/fonts/SFProText-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SFProDisplay-Regular;
+  src: url("/src/fonts/FontsFree-Net-SFProDisplay-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SFProDisplay-Bold;
+  src: url("/src/fonts/FontsFree-Net-SFProDisplay-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: SFProDisplay-Medium;
+  src: url("/src/fonts/FontsFree-Net-SFProDisplay-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
 html {
   height: 100%;
   overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 body {
   background-image: linear-gradient(#fefaf6, #FFFCF9);
   background-repeat: no-repeat;
   overflow-x: hidden;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
