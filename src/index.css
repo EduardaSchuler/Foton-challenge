@@ -40,9 +40,8 @@
 
 html, body {
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: #fefaf6;
-  overflow-x: hidden;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 

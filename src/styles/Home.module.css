@@ -1,11 +1,41 @@
 .container {
 height: 100vh;
 position: relative;
+display: flex;
+flex-direction: column;
 }
 
-header {
+.header {
+margin: 50px 20px 30px;
+}
+
+.welcomeMessage {
+display: flex;
+margin-bottom: 30px;
+margin: 0 20px 30px;
+}
+
+.welcomeMessage>p:first-of-type {
+font-family: SFProDisplay-Regular;
+font-size: 24px;
+line-height: 28.64px;
+color: #54565A;
+}
+
+.welcomeMessage>p:nth-child(2) {
+font-family: SFProDisplay-Semibold;
+font-size: 24px;
+line-height: 28.64px;
+color: #ff6a79;
+margin-right: 11px;
+}
+
+.oval1 {
 position: absolute;
-top: 0;
+width: 127px;
+height: 127px;
+left: 271px;
+top: 190px;
 }
 
 footer {
