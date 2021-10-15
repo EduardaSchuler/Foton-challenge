@@ -160,7 +160,11 @@ export const Home: FC = () => {
             onChange={e => handleSearchChange(e)}
           />
 
-       
+          <div className={styles.menu}>
+            <p>Home</p>
+            <p>Libraries</p>
+            <p>Profile</p>
+          </div>
         </div>
 
         {searchText.length === 0 && (
@@ -168,8 +172,8 @@ export const Home: FC = () => {
             <p>Hi,&nbsp;</p>
             <p>Mehmed AI Fatih</p>
             <img
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               src="hand.png"
               alt="hand"
             />

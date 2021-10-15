@@ -16,8 +16,8 @@
 }
 
 .title {
-  max-width: 124px;
-  max-height: 36px;
+  max-width: 125px;
+  max-height: 35px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
